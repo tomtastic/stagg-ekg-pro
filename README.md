@@ -1,5 +1,7 @@
-# Stagg EKG Plus
-This project uses Python to communicate with the [Fellow Stagg EKG+]() over BLE. A lot of the information used to create this program came from [this post](https://www.reddit.com/r/homeassistant/comments/ek47k2/ble_reverse_engineering_a_fellow_stagg_ekg_kettle/) and additional testing I performed.
+# Stagg EKG Pro
+This project uses Python to communicate with the [Fellow Stagg EKG Pro]() over Wifi.
+
+A lot of the information used to create this program came from [this post](https://www.reddit.com/r/homeassistant/comments/ek47k2/ble_reverse_engineering_a_fellow_stagg_ekg_kettle/) and additional testing I performed.
 
 This is intended to be used with Homebridge and [my `homebridge-kettle` plugin](https://github.com/calvinmclean/homebridge-kettle).
 
