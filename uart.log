@@ -1,0 +1,519 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:2, clock div:2
+secure boot v2 enabled
+secure boot verification succeeded
+load:0x3fff0038 len:0x2dac
+load:0x40078000 len:0x5464
+load:0x40080400 len:0xed0
+entry 0x40080694
+[0;32mI (53) boot: ESP-IDF v4.4 2nd stage bootloader[0m
+[0;32mI (53) boot: compile time 15:31:11[0m
+[0;32mI (53) boot: chip revision: 3[0m
+[0;32mI (56) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (61) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (65) boot.esp32: SPI Flash Size : 8MB[0m
+[0;32mI (70) boot: Enabling RNG early entropy source...[0m
+[0;32mI (75) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (86) boot:  0 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (94) boot:  1 ota_0            OTA app          00 10 00210000 00200000[0m
+[0;32mI (101) boot:  2 ota_1            OTA app          00 11 00410000 00200000[0m
+[0;32mI (109) boot:  3 ourdata          unknown          40 00 007f7000 00001000[0m
+[0;32mI (116) boot:  4 nvs              WiFi data        01 02 007f8000 00004000[0m
+[0;32mI (124) boot:  5 nvs_key          NVS keys         01 04 007fc000 00001000[0m
+[0;32mI (131) boot:  6 phy_init         RF data          01 01 007fd000 00001000[0m
+[0;32mI (139) boot:  7 otadata          OTA data         01 00 007fe000 00002000[0m
+[0;32mI (146) boot: End of partition table[0m
+[0;32mI (151) esp_image: segment 0: paddr=00410020 vaddr=3f400020 size=76670h (484976) map[0m
+[0;32mI (335) esp_image: segment 1: paddr=00486698 vaddr=3ffbdb60 size=07828h ( 30760) load[0m
+[0;32mI (347) esp_image: segment 2: paddr=0048dec8 vaddr=40080000 size=02150h (  8528) load[0m
+[0;32mI (351) esp_image: segment 3: paddr=00490020 vaddr=400d0020 size=e60fch (942332) map[0m
+[0;32mI (694) esp_image: segment 4: paddr=00576124 vaddr=40082150 size=1768ch ( 95884) load[0m
+[0;32mI (733) esp_image: segment 5: paddr=0058d7b8 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (733) esp_image: segment 6: paddr=0058d7d0 vaddr=00000000 size=02800h ( 10240) [0m
+[0;32mI (742) esp_image: Verifying image signature...[0m
+[0;32mI (744) secure_boot_v2: Verifying with RSA-PSS...[0m
+[0;32mI (754) secure_boot_v2: Signature verified successfully![0m
+[0;32mI (768) boot: Loaded app from partition at offset 0x410000[0m
+[0;32mI (769) secure_boot_v2: enabling secure boot v2...[0m
+[0;32mI (769) secure_boot_v2: secure boot v2 is already enabled, continuing..[0m
+[0;32mI (776) boot: Disabling RNG early entropy source...[0m
+I (1689) Main: main start: heap ANY: free 4325070 min 4323954 largest 4128768, Internal: free 158855 min 157739 largest 110592
+I (1689) TIMER: **** TMR START INITIALLY 0 ****
+I (1689) TIMER: **** TMR START INITIALLY 0 ****
+fwopen ret=0x3ffb6e70
+I (1699) Main: after redirect_stdout
+I (1749) Main: settings: clockmode=1
+I (1749) Main: settings: altitude=32768
+I (1749) Main: settings: settempr=32960
+I (1749) Main: settings: hold=0
+I (1749) Main: settings: chime=8
+I (1759) Main: settings: units=1
+I (1759) Main: settings: boil=0
+I (1759) Main: settings: guide=1
+I (1759) Main: settings: language=0
+I (1769) Main: settings: schedon=0
+I (1769) Main: settings: schtime=0
+I (1769) Main: settings: schtempr=0
+I (1779) Main: settings: wifimode=4
+I (1779) Main: settings: wificoun=0
+I (1779) Main: settings: wifiwascn=1223704966
+I (1789) Main: settings: bledis=0
+I (1789) Main: settings: blesec=0
+I (1789) Main: settings: dwnfc=0
+I (1789) Main: settings: instfc=0
+I (1799) Main: settings: offset_temp=1802383
+I (1799) Main: settings: bricky=0
+I (1799) Main: settings: Repeat_sched=0
+I (1809) http: -------- 1-----------
+I (1809) http: app version '1.1.75SSP' vs pending '0.0.76' diff: 1
+I (1819) http: ^^^^^I (1829) Cli: input_task 0x3ffde250
+I (1829) Cli: CLI::input_task
+
+I (1829) WiFi: wifi init
+I (1859) WiFi: wifi_start_sta
+I (1969) WiFi: ->event_handler
+I (1969) WiFi: WIFI_EVENT WIFI_EVENT_STA_START
+I (1969) WiFi: country US ch 1 num 11 maxp 20 plc 0
+I (1969) WiFi: set country US ch 1 num 11 maxp 20 plc 0
+I (1979) WiFi: wifi_connect: config SSID 'lab126-k2' pw b...m cs 18672 16774 channel 63
+I (1979) WiFi: ->esp_wifi_connect
+I (1989) WiFi: <-esp_wifi_connect OK
+I (1989) WiFi: <-event_handler
+I (1989) WiFi: status cnt 1 fl 0x29
+I (1999) WiFi: country US ch 1 num 11 maxp 20 plc 0
+I (1999) WiFi: set country US ch 1 num 11 maxp 20 plc 0
+I (1999) WiFi: opened udp_socket
+I (2009) BLE: BLE start
+ST7789 initialization.
+I (2229) Main: Controller::create start
+I (2239) Main: Controller::create time 7860 us
+I (2269) WiFi: ->event_handler
+I (2269) WiFi: WIFI_EVENT_STA_CONNECTED
+I (2269) Main: settings: keep wifiwascn=1223704966 (0x48f04186)
+I (2269) Main: m_our_device_name 
+I (2279) Main: Our MAC f0:10:2d:c3:dc:24 name 'EKG-2d-10-f0'
+I (2279) WiFi: start_mdns_service EKG-2d-10-f0
+I (2289) BLE: uuid 021aff50 flags 0x120a -> 0xa
+I (2289) BLE: uuid 021aff51 flags 0x120a -> 0xa
+I (2299) WiFi: <-event_handler
+I (2299) WiFi: status cnt 2 fl 0x31
+I (2299) IOT: ->mqtt_task
+I (2309) BLE: uuid 021aff52 flags 0x120a -> 0xa
+I (2309) BLE: uuid 021aff53 flags 0x120a -> 0xa
+I (2309) BLE: uuid 021aff54 flags 0x120a -> 0xa
+I (2319) BLE: uuid 2291c4b1 flags 0x212 -> 0x12
+I (2319) BLE: uuid 2291c4b2 flags 0x212 -> 0x12
+I (2319) BLE: uuid 2291c4b3 flags 0x212 -> 0x12
+I (2329) BLE: uuid 2291c4b4 flags 0x120a -> 0xa
+I (2329) BLE: uuid 2291c4b5 flags 0x121a -> 0x1a
+I (2339) BLE: uuid 2291c4b6 flags 0x1218 -> 0x18
+I (2339) BLE: uuid 2291c4b7 flags 0x120a -> 0xa
+I (2349) BLE: ->host_task &param 0x3fff6e20
+I (2359) BLE: on_sync
+I (2359) BLE: m_own_addr_type = BLE_ADDR_PUBLIC (0)
+I (2359) Main: m_our_device_name EKG-2d-10-f0
+I (2359) BLE: ble_gap_adv_start started. name EKG-2d-10-f0
+I (2359) WiFi: ->event_handler
+W (2369) WiFi: wifi event_handler WIFI_PROV_EVENT event_id 0
+I (2369) WiFi: <-event_handler
+I (2369) PROV: provisioned 1
+I (2379) PROV: ->start_provisioning_mgr
+I (2379) Main: m_our_device_name EKG-2d-10-f0
+I (2379) PROV: protocomm_ble_start name EKG-2d-10-f0
+I (2389) WiFi: ->event_handler
+I (2389) WiFi: WIFI_PROV_START
+I (2389) WiFi: <-event_handler
+I (2399) PROV: <-start_provisioning_mgr
+I (2399) HTTP: lru_purge_enable 0 max_open_sockets 7 backlog_conn 5
+I (2409) HTTP: lru_purge_enable 1 max_open_sockets 1 backlog_conn 1
+I (2409) HTTP: Starting server on port: '80'
+I (2419) HTTP: Registering URI handlers HTTP
+eFuse Two Point: Supported
+eFuse Vref: Supported
+I (2419) TEMP: esp_adc_cal_characterize ret 1: Two Point : ca 53353 cb 129 vref 1114 curves 0x3f459fe0 0x3f459f90
+I (2429) PWM: enable_input_period_measurement
+I (2439) PWM: ip not good
+I (2439) Main: Temperature Offset ---- 1.802383
+-----------------WIFI MODE STA SET------------
+I (2439) Main: window wnd->wnd av 50659328
+I (2449) WiFi: wifi_start_sta
+I (2449) Main: Activate value 0 -> 50659328 param
+I (2459) WiFi: country GB ch 1 num 13 maxp 20 plc 0
+I (2459) Main: resize_parts #0 45 90 50 80
+I (2459) WiFi: set country GB ch 1 num 13 maxp 20 plc 0
+I (2469) Main: resize_parts #1 98 90 10 80
+I (2469) Main: off-base started
+I (2479) Main: resize_parts #2 105 90 100 80
+I (2479) Main: TMR START 1 : 0
+I (2479) Main: resize_parts #3 100 155 49 40
+I (2489) PID: PID setpoint 0.000000->96.000000 C
+I (2489) Main: resize_parts #4 0 10 240 60
+I (2489) PID: PID setchg tsp 96.000000 bt 100.000000
+I (2499) Main: selected 0
+I (2499) PID: PID deactivated
+************************** !!!!!!!!!!!!!!!
+I (2509) Main: changed target temp
+I (2509) Main: resize_parts #0 17 90 100 80
+I (2519) Main: resize_parts #1 115 90 10 80
+Default endpoint------------
+I (2519) Main: resize_parts #2 122 90 100 80
+I (2519) Main: SYSTEM INIT DONE
+
+I (2529) Main: resize_parts #3 100 155 49 40
+I (2529) Main: ---------EFUSE BEFORE READ 255
+I (2529) Main: resize_parts #4 0 10 240 60
+I (2539) Main: ---------EFUSE BEFORE READ 0
+I (2539) Main: Enable backlight
+I (2549) Main: ---------EFUSE BEFORE READ 0
+I (2549) Main: ---------EFUSE BEFORE READ 0
+I (2559) Main: ---------EFUSE BEFORE READ 0
+I (2559) Main: ---------EFUSE BEFORE READ 0
+I (2559) Main: ---------EFUSE BEFORE READ 0
+I (2569) Main: ---------EFUSE BEFORE READ 0
+I (2569) Main: ---------EFUSE BEFORE READ 0
+I (2579) Main: ---------EFUSE BEFORE READ 0
+I (2579) Main: ---------EFUSE BEFORE READ 0
+I (2579) Main: ---------EFUSE BEFORE READ 0
+I (2589) Main: ---------EFUSE BEFORE READ 0
+I (2589) Main: ---------EFUSE BEFORE READ 0
+I (2589) Main: ---------EFUSE BEFORE READ 0
+I (2599) Main: ---------EFUSE BEFORE READ 0
+I (2829) WiFi: ->event_handler
+I (2829) WiFi: IP_EVENT IP_EVENT_STA_GOT_IP 192.168.8.238
+I (2829) WiFi: <-event_handler
+I (2829) WiFi: status cnt 3 fl 0x41
+=========================GET TIMEOUT REACHED============
+I (6559) http: --------------------GET TIME URL START------------------
+I (6559) http: --------------------URL https://qhderznbzup.firmware.fellowproducts.com/set_firmware_time
+I (6569) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e
+I (6569) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (6579) http: send hdr mac=24:DC:C3:2D:10:F0
+I (6579) http: SENT HEADERS? 0
+I (6579) http: SET URL RET VALU =0
+I (6579) http: SET METHOD =0
+I (6589) http: TIME INFO JSON STRING =
+I (7159) http: HTTP_EVENT_ERROR
+E (7159) http: Failed to open HTTP connection: UNKNOWN ERROR
+I (7159) http: HTTP_EVENT_DISCONNECTED
+I (7159) http: --------------------GET TIMEURL END------------------
+I (7239) Main: gui task: 5 sec: heap ANY: free 4090270 min 4059994 largest 3997696, Internal: free 27887 min 4327 largest 16896
+I (7239) OTA: mark_success 1 running ota_1
+=========================GET TIMEOUT REACHED============
+I (11179) http: --------------------GET TIME URL START------------------
+I (11179) http: --------------------URL https://qhderznbzup.firmware.fellowproducts.com/set_firmware_time
+I (11189) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e
+I (11189) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (11199) http: send hdr mac=24:DC:C3:2D:10:F0
+I (11199) http: SENT HEADERS? 0
+I (11199) http: SET URL RET VALU =0
+I (11209) http: SET METHOD =0
+I (11209) http: TIME INFO JSON STRING =
+I (11969) http: HTTP_EVENT_ERROR
+E (11969) http: Failed to open HTTP connection: UNKNOWN ERROR
+I (11969) http: HTTP_EVENT_DISCONNECTED
+I (11969) http: --------------------GET TIMEURL END------------------
+=========================GET TIMEOUT REACHED============
+I (15989) http: --------------------GET TIME URL START------------------
+I (15989) http: --------------------URL https://qhderznbzup.firmware.fellowproducts.com/set_firmware_time
+I (15999) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e
+I (15999) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (16009) http: send hdr mac=24:DC:C3:2D:10:F0
+I (16009) http: SENT HEADERS? 0
+I (16009) http: SET URL RET VALU =0
+I (16019) http: SET METHOD =0
+I (16019) http: TIME INFO JSON STRING =
+I (16679) http: HTTP_EVENT_ERROR
+E (16679) http: Failed to open HTTP connection: UNKNOWN ERROR
+I (16679) http: HTTP_EVENT_DISCONNECTED
+I (16679) http: --------------------GET TIMEURL END------------------
+I (16689) Main: **** TMR START INITIALLY 0 ****
+
+help
+I (24869) Cli: cmd len 4: 'help'
+I (24869) Cli: reset : reset
+I (24869) Cli: state : print state
+I (24869) Cli: statesave : save state after given time (ms)
+I (24879) Cli: prtsaved : print saved state
+I (24879) Cli: setstate : set state
+I (24879) Cli: ss : set state
+I (24889) Cli: shot : print screenshot
+I (24889) Cli: refresh : refresh gui
+I (24889) Cli: sleepms : sleep given time ms
+I (24899) Cli: setsetting : setsetting name integer_value
+I (24899) Cli: setsettingd : setsetting name double_value
+I (24909) Cli: setsettings : setsetting name string_value
+I (24909) Cli: setsettingb : setsetting name hexstring
+I (24919) Cli: clrsettings : delete all settings
+I (24919) Cli: prtsettings : print settings
+I (24919) Cli: prts : print settings
+I (24929) Cli: prtclock : print clock
+I (24929) Cli: setclock : setclock hour min [sec]
+I (24929) Cli: incclock : increment clock minutes
+I (24939) Cli: incticks : increase tick count
+I (24939) Cli: setanalog : set clock mode = analog
+I (24949) Cli: setdigital : set clock mode = digital
+I (24949) Cli: setaltitudem : set altitude settings
+I (24959) Cli: setaltitudef : set altitude settings
+I (24959) Cli: setunitsc : set units = c
+I (24959) Cli: setunitsf : set units = f
+I (24969) Cli: fwinfo : print firmware info
+I (24969) Cli: setpart : set boot parition name
+I (24979) Cli: eraseotherpart : erase non-current OTA part
+I (24979) Cli: heapprt : print heap info
+I (24979) Cli: lvglinfo : print lvgl mem use
+I (24989) Cli: lvglpon : enable lvgl alloc print
+I (24989) Cli: lvglpoff : disable lvgl alloc print
+I (24999) Cli: logprt : print small log
+I (24999) Cli: gpioset : gpioset * 1 or gpioset * 0
+I (24999) Cli: heaton : set GPIO HEAT High
+I (25009) Cli: heatoff : set GPIO HEAT Low
+I (25009) Cli: warmon : set GPIO WARM High
+I (25019) Cli: warmoff : set GPIO WARM Low
+I (25019) Cli: warmduty : enable WARM pwm using duty percent
+I (25019) Cli: rmtflt : set filter for rmt
+I (25029) Cli: pwmprt : print pwm regs
+I (25029) Cli: temp : print tempr min/max/av
+I (25039) Cli: tstprd : set tempr stat/notif period ms
+I (25039) Cli: buz : buz freq_hz duty_13_bit dur_ms  or buz sos - run buzzer
+I (25049) Cli: wifiprt : print WiFi config
+I (25049) Cli: wifierase : erase wifi sap config
+I (25059) Cli: wifisappw : enter/save wifi sap password
+I (25059) Cli: wifistapw : enter/save wifi sta password
+I (25059) Cli: wifistassid : enter/save wifi sta ssid [pw]
+I (25069) Cli: wifioff : turn wifi off
+I (25069) Cli: wifion : turn wifi on
+I (25079) Cli: wifisap : start wifi softap mode
+I (25079) Cli: wifista : start wifi station mode
+I (25079) Cli: provreset : reset WiFi config (forget AP)
+I (25089) Cli: mdns : start mdns
+I (25089) Cli: blesec : start ble security
+I (25099) Cli: bleen : enable/start BLE
+I (25099) Cli: bledis : disable/stop BLE
+I (25099) Cli: iot : test iot
+I (25109) Cli: httpdwn : httpdwn url : download file via HTTP and drop
+I (25109) Cli: httpfw : httpfw : download/install FW via HTTP
+I (25119) Cli: httptest : httptest : verify that HTTPS server follows rules
+I (25119) Cli: 1 : short press button 1
+I (25129) Cli: 1d : push button 1
+I (25129) Cli: 1u : release button 1
+I (25129) Cli: 2 : short press button 2
+I (25139) Cli: 2d : push button 2
+I (25139) Cli: 2u : release button 2
+I (25139) Cli: q : rotate dial left
+I (25149) Cli: w : rotate dial right
+I (25149) Cli: left : rotate dial left
+I (25149) Cli: right : rotate dial right
+I (25159) Cli: bc : print button click count
+I (25159) Cli: read_adc : read adc voltage
+I (25159) Cli: temp_offset : Read temperature offset 
+I (25169) Cli: adcsamples : number of adc samples
+I (25169) Cli: set_period : set pwm period in seconds
+I (25179) Cli: max_duty : set triac max duty
+I (25179) Cli: min_duty : set triac min duty
+
+prts
+I (44259) Cli: cmd len 4: 'prts'
+prt_settings 0x3ffc58d4
+st: clockmode=1
+st: altitude=0 m
+st: settempr=192 2C (96.000000 C 204.800003 F)
+st: hold=0
+st: chime=8
+st: units=1
+st: boil=0
+st: guide=1
+st: language=0
+st: schedon=0
+st: schtime=0:0
+st: schtempr=0 F (-17.777779 C 0.000000 F)
+st: wifimode=4
+st: wificoun=0
+st: wifiwascn=1223704966
+st: bledis=0
+st: blesec=0
+st: dwnfc=0
+st: instfc=0
+st: offset_temp=1802383
+st: bricky=0
+st: Repeat_sched=0
+settings print end
+I (44289) Cli: command 'prts' ret 0
+
+fwinfo
+I (68069) Cli: cmd len 6: 'fwinfo'
+I (68089) OTA: app_descr 0x3f400020 boot 0x3ffb7998 running 0x3ffb7998 invalid 0
+I (68089) OTA: Current version: 1.1.75SSP cli
+Boot partition: ota_1
+Running partition: ota_1
+Last invalid partition: 
+I (68099) OTA: partition 'factory' at 0x10000 size 0x200000 encr 0 state ?? fw version 1.1.14SSB
+I (68119) OTA: partition 'ota_0' at 0x210000 size 0x200000 encr 0 state valid fw version 
+I (68129) OTA: partition 'ota_1' at 0x410000 size 0x200000 encr 0 state valid fw version 1.1.75SSP
+I (68139) Cli: command 'fwinfo' ret 0
+
+logprt
+I (97349) Cli: cmd len 6: 'logprt'
+E (97349) Main: small_log_print &argc 0x3ffde170
+Log filled 306 task 0x3ffde31c name 'input_task'
+#50: t 592974 (+0): stdout_output task 0x3ffe2964
+#51: t 593299 (+325): stdout_output task 0x3ffe2964
+#52: t 593425 (+126): stdout_output task 0x3ffe2964
+#53: t 596390 (+2965): stdout_output task 0x3ffe2964
+#54: t 601566 (+5176): stdout_output task 0x3ffe2964
+#55: t 609232 (+7666): stdout_output task 0x3ffbd1f8
+#56: t 609779 (+547): stdout_output task 0x3ffbd1f8
+#57: t 614114 (+4335): stdout_output task 0x3ffe2964
+I (98569) Cli: command 'logprt' ret 0
+
+wifiprt
+I (136919) Cli: cmd len 7: 'wifiprt'
+I (136919) WiFi: WiFiMode setting: StaOn
+I (136919) Main: m_our_device_name EKG-2d-10-f0
+I (136919) WiFi: EKG-2d-10-f0
+I (136919) WiFi: wifi config sta         ssid 'lab126-k2'
+I (136919) WiFi: country GB ch 1 num 13 maxp 20 plc 0
+I (136929) WiFi: config_sta SSID 'lab126-k2' pw b...m cs 18672 16774 pwlen 20 channel 63
+I (136939) WiFi: config_sap SSID 'ESP_2D10F1' pw  ...  cs 62229 0 pwlen 0 channel 1
+I (136939) WiFi: Current mode: 1: STA
+I (136949) WiFi: UDP: set 0 sock 54 targ 0.0.0.0 sent 0 failed 0
+I (136949) Cli: command 'wifiprt' ret 0
+
+httptest
+I (194059) Cli: cmd len 8: 'httptest'
+I (194059) http: post_download in progress: 1
+I (194059) Cli: command 'httptest' ret 0
+I (194089) http: download_install https://qhderznbzup.firmware.fellowproducts.com/get_ota_device_firmware cert 0x3ffbcf6c: 0002006a sentky 1
+I (194089) http: MIN free heap 26503
+I (194099) http: send hdr fwv=1.1.75SSP
+E (194119) Main: Encrypted FFs still FFs
+I (194119) http: HTTP Test #0: send correct full key=000000000000000...
+I (194119) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e  send_region_header1
+I (194119) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (194129) http: send hdr mac=24:DC:C3:2D:10:F0
+I (194129) http: lang_to_add 3  L_Simplified_Chinese 3 L_Traditional_Chinese 5 L_Korean 6 L_Japanese 7
+I (194869) http: HTTP_EVENT_ERROR
+I (194869) http: HTTP_EVENT_DISCONNECTED
+E (194869) http: Error: http download failed: err 28674
+E (194869) http: HTTP Test #0 failed: got code -1, but expected 200
+I (194899) http: download_install https://qhderznbzup.firmware.fellowproducts.com/get_ota_device_firmware cert 0x3ffbcf6c: 0002006a sentky 1
+I (194899) http: MIN free heap 26383
+I (194899) http: send hdr fwv=1.1.75SSP
+I (194929) http: HTTP Test #1: send correct id=000000000000000...
+I (194929) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e  send_region_header1
+I (194929) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (194929) http: send hdr mac=24:DC:C3:2D:10:F0
+I (194939) http: lang_to_add 3  L_Simplified_Chinese 3 L_Traditional_Chinese 5 L_Korean 6 L_Japanese 7
+I (195579) http: HTTP_EVENT_ERROR
+I (195579) http: HTTP_EVENT_DISCONNECTED
+E (195579) http: Error: http download failed: err 28674
+E (195579) http: HTTP Test #1 failed: got code -1, but expected 200
+I (195639) http: download_install https://qhderznbzup.firmware.fellowproducts.com/get_ota_device_firmware cert 0x3ffbcf6c: 0002006a sentky 1
+I (195639) http: MIN free heap 26375
+I (195639) http: send hdr fwv=1.1.75SSP
+I (195649) http: HTTP Test #2: send wrong key=000000000010000...
+I (195649) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e  send_region_header1
+I (195659) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (195659) http: send hdr mac=24:DC:C3:2D:10:F0
+I (195669) http: lang_to_add 3  L_Simplified_Chinese 3 L_Traditional_Chinese 5 L_Korean 6 L_Japanese 7
+I (196399) http: HTTP_EVENT_ERROR
+I (196399) http: HTTP_EVENT_DISCONNECTED
+E (196399) http: Error: http download failed: err 28674
+E (196399) http: HTTP Test #2 failed: got code -1, but expected 400
+I (196439) http: download_install https://qhderznbzup.firmware.fellowproducts.com/get_ota_device_firmware cert 0x3ffbcf6c: 0002006a sentky 1
+I (196439) http: MIN free heap 26375
+I (196439) http: send hdr fwv=1.1.75SSP
+I (196449) http: HTTP Test #3: send wrong id=000000000000000...
+I (196449) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e  send_region_header1
+I (196459) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (196459) http: send hdr mac=24:DC:C3:2D:10:F0
+I (196469) http: lang_to_add 3  L_Simplified_Chinese 3 L_Traditional_Chinese 5 L_Korean 6 L_Japanese 7
+I (197239) http: HTTP_EVENT_ERROR
+I (197239) http: HTTP_EVENT_DISCONNECTED
+E (197239) http: Error: http download failed: err 28674
+E (197239) http: HTTP Test #3 failed: got code -1, but expected 400
+I (197269) http: download_install https://qhderznbzup.firmware.fellowproducts.com/get_ota_device_firmware cert 0x3ffbcf6c: 0002006a sentky 1
+I (197269) http: MIN free heap 26503
+I (197279) http: send hdr fwv=1.1.75SSP
+I (197279) http: HTTP Test #4: do not send any header
+I (197279) http: lang_to_add 3  L_Simplified_Chinese 3 L_Traditional_Chinese 5 L_Korean 6 L_Japanese 7
+I (197939) http: HTTP_EVENT_ERROR
+I (197939) http: HTTP_EVENT_DISCONNECTED
+E (197939) http: Error: http download failed: err 28674
+E (197939) http: HTTP Test #4 failed: got code -1, but expected 400
+I (197989) http: download_install https://qhderznbzup.firmware.fellowproducts.com/get_ota_device_firmware cert 0x3ffbcfe8: 0002006a sentky 1
+I (197989) http: MIN free heap 26495
+I (197989) http: send hdr fwv=1.1.75SSP
+I (197999) http: HTTP Test #5: Send only mac header, but no key
+I (197999) http: send hdr mac=24:DC:C3:2D:10:F0
+I (197999) http: lang_to_add 3  L_Simplified_Chinese 3 L_Traditional_Chinese 5 L_Korean 6 L_Japanese 7
+I (198649) http: HTTP_EVENT_ERROR
+I (198649) http: HTTP_EVENT_DISCONNECTED
+E (198649) http: Error: http download failed: err 28674
+E (198649) http: HTTP Test #5 failed: got code -1, but expected 400
+I (198649) http: HTTP Test all succeeded
+I (198659) Main: test_download thread end: heap ANY: free 4088866 min 4057554 largest 3997696, Internal: free 26495 min 3739 largest 16896
+I (198669) Stat: stat http_download count 0 total 0 av 0 min 0 max 0
+I (198669) Stat: stat ble_send_tempr count 0 total 0 av 0 min 0 max 0
+I (198679) Stat: stat gui_poll count 0 total 0 av 0 min 0 max 0
+I (198679) Stat: stat gui_tasks count 0 total 0 av 0 min 0 max 0
+I (198689) Stat: stat gui_tick_int count 0 total 0 av 0 min 0 max 0
+I (198699) Stat: stat gui_tick_in count 0 total 0 av 0 min 0 max 0
+I (198699) Stat: stat read_temp count 0 total 0 av 0 min 0 max 0
+I (198709) Stat: stat warm_isr_intrv count 0 total 0 av 0 min 0 max 0
+I (198709) Stat: stat draw count 0 total 0 av 0 min 0 max 0
+I (198719) Stat: stat png_pixel_wait count 0 total 0 av 0 min 0 max 0
+I (198719) Stat: stat png_blend_to_pixel count 0 total 0 av 0 min 0 max 0
+I (198729) Stat: stat png_pixel_to_blend count 0 total 0 av 0 min 0 max 0
+I (198739) Stat: stat png_draw_blend count 0 total 0 av 0 min 0 max 0
+I (198739) Stat: stat png_gui_wait count 0 total 0 av 0 min 0 max 0
+I (198749) Stat: stat png_gui_draw count 0 total 0 av 0 min 0 max 0
+I (198759) Stat: stat png_decode count 0 total 0 av 0 min 0 max 0
+I (198759) http: download_install end
+
+iot
+I (208179) Cli: cmd len 3: 'iot'
+I (208179) Cli: command 'iot' ret 0
+I (208179) IOT: ->run_iot
+E (208179) Main: nvs_get_str iotkey failed: 4354
+E (208179) IOT: No IOT key
+I (208179) IOT: <-run_iot conf 0
+
+w
+I (438189) Cli: cmd len 6: 'httpfw'
+I (438199) http: post_download in progress: 1
+I (438199) Cli: command 'httpfw' ret 0
+I (438209) http: download_install https://qhderznbzup.firmware.fellowproducts.com/get_ota_device_firmware cert 0x3ffbcf6c: 0002006a sentky 1
+I (438209) http: MIN free heap 26503
+I (438209) http: MIN free heap  in OTA 26503
+I (438219) http: send hdr fwv=1.1.75SSP
+I (438229) http: PARSED: b8b72480ac404bdfa06cdaa1cb68e21e  send_region_header1
+I (438229) http: send hdr id=b8b72480ac404bdfa06cdaa1cb68e21e
+I (438229) http: send hdr mac=24:DC:C3:2D:10:F0
+I (438239) http: lang_to_add 3  L_Simplified_Chinese 3 L_Traditional_Chinese 5 L_Korean 6 L_Japanese 7
+I (438979) http: HTTP_EVENT_ERROR
+I (438979) http: HTTP_EVENT_DISCONNECTED
+I (438979) http: HTTP_EVENT_DISCONNECTED
+E (438979) http: esp_https_ota_begin failed 28674
+I (438979) http: advanced_ota_update took 770 ms ret 4
+I (438989) Stat: stat http_download count 0 total 0 av 0 min 0 max 0
+I (438989) Stat: stat ble_send_tempr count 0 total 0 av 0 min 0 max 0
+I (438999) Stat: stat gui_poll count 0 total 0 av 0 min 0 max 0
+I (439009) Stat: stat gui_tasks count 0 total 0 av 0 min 0 max 0
+I (439009) Stat: stat gui_tick_int count 0 total 0 av 0 min 0 max 0
+I (439019) Stat: stat gui_tick_in count 0 total 0 av 0 min 0 max 0
+I (439019) Stat: stat read_temp count 0 total 0 av 0 min 0 max 0
+I (439029) Stat: stat warm_isr_intrv count 0 total 0 av 0 min 0 max 0
+I (439029) Stat: stat draw count 0 total 0 av 0 min 0 max 0
+I (439039) Stat: stat png_pixel_wait count 0 total 0 av 0 min 0 max 0
+I (439049) Stat: stat png_blend_to_pixel count 0 total 0 av 0 min 0 max 0
+I (439049) Stat: stat png_pixel_to_blend count 0 total 0 av 0 min 0 max 0
+I (439059) Stat: stat png_draw_blend count 0 total 0 av 0 min 0 max 0
+I (439059) Stat: stat png_gui_wait count 0 total 0 av 0 min 0 max 0
+I (439069) Stat: stat png_gui_draw count 0 total 0 av 0 min 0 max 0
+I (439079) Stat: stat png_decode count 0 total 0 av 0 min 0 max 0
+I (439079) http: download_install end
