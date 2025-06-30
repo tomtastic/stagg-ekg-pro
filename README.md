@@ -47,3 +47,50 @@ gatttool -b $KETTLE_MAC -I
 > char-write-req 0x000e 0100
 > char-write-cmd 0x000d efdd0b3031323334353637383930313233349a6d
 ```
+
+## HTTP endpoint
+The Stagg EKG Pro presents an unsecured HTTP endpoint from which all CLI commands can be executed:
+```bash
+# Retrieve kettle state
+$ http http://192.168.8.238/cli cmd==state --body
+            <form action="cli" method="GET">
+            <label for="x">CLI Command:</label><br>
+            <input type="text" id="cli" name="cmd"><br>
+            </form>
+            I (35106409) Cli: cmd len 5: 'state'
+I (35106419) Main: OTA vd 1 ldt 34485 ldr 7 dip 0 waitsec 1181 numf 19 wgi 1 iot r 0
+scrname=wnd
+value=50661414
+mode=S_Off
+tempr=27.433256 C
+temprB=100.000000 C
+temprT=93.000000 C
+ketl= ho 0 wd 0 nw 0 ipb 0 bf 0 tr 0
+temps=186 2C
+tempsc=192 2C
+units=1
+clock=8:38
+ticks=35106419 231639 35104734
+ble conn=0
+I (35106429) Cli: command 'state' ret 0
+
+# Turn kettle heating on
+$ http http://192.168.8.238/cli cmd==heaton --body
+            <form action="cli" method="GET">
+            <label for="x">CLI Command:</label><br>
+            <input type="text" id="cli" name="cmd"><br>
+            </form>
+            I (35167439) Cli: cmd len 6: 'heaton'
+I (35167439) Main: set HEAT High
+I (35167439) Cli: command 'heaton' ret 0
+
+# Turn kettle heating off
+$ http http://192.168.8.238/cli cmd==heatoff --body
+            <form action="cli" method="GET">
+            <label for="x">CLI Command:</label><br>
+            <input type="text" id="cli" name="cmd"><br>
+            </form>
+            I (35178399) Cli: cmd len 7: 'heatoff'
+I (35178399) Main: set HEAT Low
+I (35178399) Cli: command 'heatoff' ret 0
+```
