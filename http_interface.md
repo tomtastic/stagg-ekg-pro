@@ -10,7 +10,3 @@ I (8732409) Cli: cmd len 5: 'state' I (8732409) Main: OTA vd 1 ldt 7470 ldr 7 di
 > ```
 I (8767019) Cli: cmd len 11: 'prtsettings' prt_settings 0x3ffc58d4 st: clockmode=1 st: altitude=0 m st: settempr=186 2C (93.000000 C 199.399994 F) st: hold=0 st: chime=5 st: units=1 st: boil=0 st: guide=1 st: language=0 st: schedon=0 st: schtime=0:0 st: schtempr=0 F (-17.777779 C 0.000000 F) st: wifimode=4 st: wificoun=0 st: wifiwascn=1223704966 st: bledis=0 st: blesec=0 st: dwnfc=0 st: instfc=0 st: offset_temp=1802383 st: bricky=0 st: Repeat_sched=0 settings print end I (8767059) Cli: command 'prtsettings' ret 0
 ```
-[CLI : Read ADC](http://192.168.8.238/cli?readadc)
-> ```
-I (8878739) Cli: cmd len 8: 'read_adc' I (8878739) Cli: command 'read_adc' ret 0.000000
-```
