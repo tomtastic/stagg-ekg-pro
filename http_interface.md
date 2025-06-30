@@ -1,8 +1,146 @@
-[View all CLI commands](http://192.168.8.238/cli)
-> ```I (8445369) Cli: cmd len 4: 'help' I (8445369) Cli: reset : reset I (8445369) Cli: state : print state I (8445369) Cli: statesave : save state after given time (ms) I (8445369) Cli: prtsaved : print saved state I (8445379) Cli: setstate : set state I (8445379) Cli: ss : set state I (8445379) Cli: shot : print screenshot I (8445389) Cli: refresh : refresh gui I (8445389) Cli: sleepms : sleep given time ms I (8445389) Cli: setsetting : setsetting name integer_value I (8445399) Cli: setsettingd : setsetting name double_value I (8445399) Cli: setsettings : setsetting name string_value I (8445409) Cli: setsettingb : setsetting name hexstring I (8445409) Cli: clrsettings : delete all settings I (8445419) Cli: prtsettings : print settings I (8445419) Cli: prts : print settings I (8445429) Cli: prtclock : print clock I (8445429) Cli: setclock : setclock hour min [sec] I (8445429) Cli: incclock : increment clock minutes I (8445439) Cli: incticks : increase tick count I (8445439) Cli: setanalog : set clock mode = analog I (8445449) Cli: setdigital : set clock mode = digital I (8445449) Cli: setaltitudem : set altitude settings I (8445459) Cli: setaltitudef : set altitude settings I (8445459) Cli: setunitsc : set units = c I (8445459) Cli: setunitsf : set units = f I (8445469) Cli: fwinfo : print firmware info I (8445469) Cli: setpart : set boot parition name I (8445479) Cli: eraseotherpart : erase non-current OTA part I (8445479) Cli: heapprt : print heap info I (8445489) Cli: lvglinfo : print lvgl mem use I (8445489) Cli: lvglpon : enable lvgl alloc print I (8445499) Cli: lvglpoff : disable lvgl alloc print I (8445499) Cli: logprt : print small log I (8445499) Cli: gpioset : gpioset * 1 or gpioset * 0 I (8445509) Cli: heaton : set GPIO HEAT High I (8445509) Cli: heatoff : set GPIO HEAT Low I (8445509) Cli: warmon : set GPIO WARM High I (8445519) Cli: warmoff : set GPIO WARM Low I (8445519) Cli: warmduty : enable WARM pwm using duty percent I (8445529) Cli: rmtflt : set filter for rmt I (8445529) Cli: pwmprt : print pwm regs I (8445539) Cli: temp : print tempr min/max/av I (8445539) Cli: tstprd : set tempr stat/notif period ms I (8445539) Cli: buz : buz freq_hz duty_13_bit dur_ms or buz sos - run buzzer I (8445549) Cli: wifiprt : print WiFi config I (8445559) Cli: wifierase : erase wifi sap config I (8445559) Cli: wifisappw : enter/save wifi sap password I (8445559) Cli: wifistapw : enter/save wifi sta password I (8445569) Cli: wifistassid : enter/save wifi sta ssid [pw] I (8445569) Cli: wifioff : turn wifi off I (8445579) Cli: wifion : turn wifi on I (8445579) Cli: wifisap : start wifi softap mode I (8445589) Cli: wifista : start wifi station mode I (8445589) Cli: provreset : reset WiFi config (forget AP) I (8445599) Cli: mdns : start mdns I (8445599) Cli: blesec : start ble security I (8445599) Cli: bleen : enable/start BLE I (8445609) Cli: bledis : disable/stop BLE I (8445609) Cli: iot : test iot I (8445609) Cli: httpdwn : httpdwn url : download file via HTTP and drop I (8445619) Cli: httpfw : httpfw : download/install FW via HTTP I (8445619) Cli: httptest : httptest : verify that HTTPS server follows rules I (8445629) Cli: 1 : short press button 1 I (8445629) Cli: 1d : push button 1 I (8445639) Cli: 1u : release button 1 I (8445639) Cli: 2 : short press button 2 I (8445639) Cli: 2d : push button 2 I (8445649) Cli: 2u : release button 2 I (8445649) Cli: q : rotate dial left I (8445659) Cli: w : rotate dial right I (8445659) Cli: left : rotate dial left I (8445659) Cli: right : rotate dial right I (8445669) Cli: bc : print button click count I (8445669) Cli: read_adc : read adc voltage I (8445669) Cli: temp_offset : Read temperature offset I (8445679) Cli: adcsamples : number of adc samples I (8445679) Cli: set_period : set pwm period in seconds I (8445689) Cli: max_duty : set triac max duty I (8445689) Cli: min_duty : set triac min duty```
+[View all CLI commands](http://192.168.8.238/cli?cmd=help)
+```
+I (40797169) Cli: cmd len 4: 'help'
+I (40797169) Cli: reset : reset
+I (40797169) Cli: state : print state
+I (40797169) Cli: statesave : save state after given time (ms)
+I (40797179) Cli: prtsaved : print saved state
+I (40797179) Cli: setstate : set state
+I (40797179) Cli: ss : set state
+I (40797189) Cli: shot : print screenshot
+I (40797189) Cli: refresh : refresh gui
+I (40797189) Cli: sleepms : sleep given time ms
+I (40797199) Cli: setsetting : setsetting name integer_value
+I (40797199) Cli: setsettingd : setsetting name double_value
+I (40797209) Cli: setsettings : setsetting name string_value
+I (40797209) Cli: setsettingb : setsetting name hexstring
+I (40797219) Cli: clrsettings : delete all settings
+I (40797219) Cli: prtsettings : print settings
+I (40797219) Cli: prts : print settings
+I (40797229) Cli: prtclock : print clock
+I (40797229) Cli: setclock : setclock hour min [sec]
+I (40797239) Cli: incclock : increment clock minutes
+I (40797239) Cli: incticks : increase tick count
+I (40797249) Cli: setanalog : set clock mode = analog
+I (40797249) Cli: setdigital : set clock mode = digital
+I (40797249) Cli: setaltitudem : set altitude settings
+I (40797259) Cli: setaltitudef : set altitude settings
+I (40797259) Cli: setunitsc : set units = c
+I (40797269) Cli: setunitsf : set units = f
+I (40797269) Cli: fwinfo : print firmware info
+I (40797279) Cli: setpart : set boot parition name
+I (40797279) Cli: eraseotherpart : erase non-current OTA part
+I (40797289) Cli: heapprt : print heap info
+I (40797289) Cli: lvglinfo : print lvgl mem use
+I (40797289) Cli: lvglpon : enable lvgl alloc print
+I (40797299) Cli: lvglpoff : disable lvgl alloc print
+I (40797299) Cli: logprt : print small log
+I (40797309) Cli: gpioset : gpioset * 1 or gpioset * 0
+I (40797309) Cli: heaton : set GPIO HEAT High
+I (40797309) Cli: heatoff : set GPIO HEAT Low
+I (40797319) Cli: warmon : set GPIO WARM High
+I (40797319) Cli: warmoff : set GPIO WARM Low
+I (40797329) Cli: warmduty : enable WARM pwm using duty percent
+I (40797329) Cli: rmtflt : set filter for rmt
+I (40797339) Cli: pwmprt : print pwm regs
+I (40797339) Cli: temp : print tempr min/max/av
+I (40797349) Cli: tstprd : set tempr stat/notif period ms
+I (40797349) Cli: buz : buz freq_hz duty_13_bit dur_ms  or buz sos - run buzzer
+I (40797369) Cli: wifiprt : print WiFi config
+I (40797369) Cli: wifierase : erase wifi sap config
+I (40797369) Cli: wifisappw : enter/save wifi sap password
+I (40797369) Cli: wifistapw : enter/save wifi sta password
+I (40797379) Cli: wifistassid : enter/save wifi sta ssid [pw]
+I (40797389) Cli: wifioff : turn wifi off
+I (40797389) Cli: wifion : turn wifi on
+I (40797389) Cli: wifisap : start wifi softap mode
+I (40797389) Cli: wifista : start wifi station mode
+I (40797399) Cli: provreset : reset WiFi config (forget AP)
+I (40797399) Cli: mdns : start mdns
+I (40797409) Cli: blesec : start ble security
+I (40797409) Cli: bleen : enable/start BLE
+I (40797409) Cli: bledis : disable/stop BLE
+I (40797419) Cli: iot : test iot
+I (40797419) Cli: httpdwn : httpdwn url : download file via HTTP and drop
+I (40797429) Cli: httpfw : httpfw : download/install FW via HTTP
+I (40797429) Cli: httptest : httptest : verify that HTTPS server follows rules
+I (40797439) Cli: 1 : short press button 1
+I (40797439) Cli: 1d : push button 1
+I (40797469) Cli: 1u : release button 1
+I (40797469) Cli: 2 : short press button 2
+I (40797469) Cli: 2d : push button 2
+I (40797479) Cli: 2u : release button 2
+I (40797479) Cli: q : rotate dial left
+I (40797479) Cli: w : rotate dial right
+I (40797479) Cli: left : rotate dial left
+I (40797479) Cli: right : rotate dial right
+I (40797489) Cli: bc : print button click count
+I (40797489) Cli: read_adc : read adc voltage
+I (40797489) Cli: temp_offset : Read temperature offset
+I (40797499) Cli: adcsamples : number of adc samples
+I (40797499) Cli: set_period : set pwm period in seconds
+I (40797509) Cli: max_duty : set triac max duty
+I (40797509) Cli: min_duty : set triac min duty
+```
 
-[CLI : State](http://192.168.8.238/cli?state)
-> ```I (8732409) Cli: cmd len 5: 'state' I (8732409) Main: OTA vd 1 ldt 7470 ldr 7 dip 0 waitsec 540 numf 4 wgi 1 iot r 0 scrname=wnd value=50659602 mode=S_Off tempr=29.643318 C temprB=100.000000 C temprT=93.000000 C ketl= ho 0 wd 0 nw 0 ipb 0 bf 0 tr 0 temps=186 2C tempsc=192 2C units=1 clock=1:18 ticks=8732409 231639 8730724 ble conn=0 I (8732429) Cli: command 'state' ret 0```
+[CLI : 2 (Short Press Button 2 - Main dial - Kettle On/Off) ](http://192.168.8.238/cli?cmd=2)
+```
+I (40878879) Cli: cmd len 1: '2'
+I (40878879) Cli: command '2' ret 0
+```
+
+[CLI : State](http://192.168.8.238/cli?cmd=state)
+```
+I (40875509) Cli: cmd len 5: 'state'
+I (40875509) Main: OTA vd 1 ldt 36286 ldr 7 dip 0 waitsec 0 numf 20 wgi 1 iot r 0
+scrname=wnd
+value=164
+mode=S_Heat        # <-- Can be one of :
+                   #     S_Off, S_StartupToTempr, S_StartupToMenu, S_StartupMenu,
+                   #     S_Standby, S_Heat, S_HeatOff, S_Hold, S_NoWater, S_MenuExitToTempr,
+                   #     S_Set_clock, S_OTA_Start, S_OTA_Abort, S_clocK_menu,
+                   #     S_Calib_finish, S_Calib_aborted, S_Calib_Halted, S_Calib_Started, S_Check_Wireless_setup
+tempr=72.938158 C
+temprB=100.000000 C
+temprT=82.000000 C
+ketl= ho 0 wd 0 nw 0 ipb 0 bf 0 tr 0
+temps=164 2C
+tempsc=192 2C
+units=1
+clock=10:14
+ticks=40875509 40869019 40873824
+ble conn=0
+I (40875529) Cli: command 'state' ret 0
+```
 
 [CLI : Print Settings](http://192.168.8.238/cli?prtsettings)
-> ```I (8767019) Cli: cmd len 11: 'prtsettings' prt_settings 0x3ffc58d4 st: clockmode=1 st: altitude=0 m st: settempr=186 2C (93.000000 C 199.399994 F) st: hold=0 st: chime=5 st: units=1 st: boil=0 st: guide=1 st: language=0 st: schedon=0 st: schtime=0:0 st: schtempr=0 F (-17.777779 C 0.000000 F) st: wifimode=4 st: wificoun=0 st: wifiwascn=1223704966 st: bledis=0 st: blesec=0 st: dwnfc=0 st: instfc=0 st: offset_temp=1802383 st: bricky=0 st: Repeat_sched=0 settings print end I (8767059) Cli: command 'prtsettings' ret 0```
+```
+I (41287769) Cli: cmd len 11: 'prtsettings'
+prt_settings 0x3ffc58d4
+st: clockmode=1
+st: altitude=0 m
+st: settempr=164 2C (82.000000 C 179.600006 F)
+st: hold=0
+st: chime=5
+st: units=1
+st: boil=0
+st: guide=1
+st: language=0
+st: schedon=0
+st: schtime=0:0
+st: schtempr=0 F (-17.777779 C 0.000000 F)
+st: wifimode=4
+st: wificoun=0
+st: wifiwascn=1223704966
+st: bledis=0
+st: blesec=0
+st: dwnfc=0
+st: instfc=0
+st: offset_temp=1802383
+st: bricky=0
+st: Repeat_sched=0
+settings print end
+I (41287799) Cli: command 'prtsettings' ret 0
+```
+
+[CLI : 
