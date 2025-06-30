@@ -50,6 +50,8 @@ Note that there are several PNG images stored in the firmware:
 * WiFi/2-01.png
 
 [View all CLI commands](http://192.168.8.238/cli?cmd=help)
+The CLI endpoint allows the user to issue all the commands that are possible
+via the UART console.
 ```
 I (40797169) Cli: cmd len 4: 'help'
 I (40797169) Cli: reset : reset
