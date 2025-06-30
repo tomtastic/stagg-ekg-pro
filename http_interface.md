@@ -1,3 +1,54 @@
+[Firmware Upload](http://192.168.8.238/upload)
+
+[PNG Upload](http://192.168.8.238/upng)
+Note that there are several PNG images stored in the firmware:
+* Boil 1st/1-01.png
+* Boil 1st/2-01.png
+* clock - select analog.png
+* clock - select digital.png
+* clock - select off.png
+* error screen - add water.png
+* error screen - Calibration in progress.png
+* error screen - cannot turn wifi.png
+* error screen - Downloading.png
+* error screen - Enable Wireless.png
+* error screen - kettle not connected to network.png
+* error screen - Set clock.png
+* error screen - Set confirm water.png
+* error.png
+* factory reset - cancel.png
+* factory reset - select.png
+* Finished.png
+* gmenu - Calibration.png
+* gmenu - clock.png
+* gmenu - language.png
+* gmenu - wireless.png
+* Guide/1-01.png
+* Guide/2-01.png
+* Language/1-01.png
+* Language/2-01.png
+* Language/3-01.png
+* Language/4-01.png
+* Language/5-01.png
+* Language/6-01.png
+* Language/7-01.png
+* menu - altitude.png
+* menu - chime.png
+* menu - general.png
+* menu - guide.png
+* menu - hold.png
+* menu - pre-boil.png
+* menu - schedule.png
+* menu - units.png
+* none.png
+* none2.png
+* Schedule/2-01.png
+* Schedule/3-01.png
+* Schedule/4-01.png
+* Schedule/6-01.png
+* WiFi/1-01.png
+* WiFi/2-01.png
+
 [View all CLI commands](http://192.168.8.238/cli?cmd=help)
 ```
 I (40797169) Cli: cmd len 4: 'help'
