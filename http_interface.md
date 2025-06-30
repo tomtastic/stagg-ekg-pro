@@ -142,5 +142,3 @@ st: Repeat_sched=0
 settings print end
 I (41287799) Cli: command 'prtsettings' ret 0
 ```
-
-[CLI : 
